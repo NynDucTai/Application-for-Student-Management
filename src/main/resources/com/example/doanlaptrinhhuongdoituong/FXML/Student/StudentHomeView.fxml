@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="root" stylesheets="@../../CSS/Student/StudentHomeView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.student.StudentHomeController">
+   <children>
+      <Label fx:id="userName_label" layoutX="35.0" layoutY="29.0" styleClass="welcome_title" text="Xin chào" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="10.0" />
+      <HBox layoutY="46.0" prefHeight="250.0" prefWidth="820.0" styleClass="account_view" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <VBox prefHeight="250.0" prefWidth="815.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin sinh viên">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Line endX="810.0">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Line>
+                  <HBox prefHeight="250.0" prefWidth="550.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fx:id="avatar_img" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../Resource/AvatarIcon.png" />
+                           </image></ImageView>
+                        <GridPane fx:id="student_information" styleClass="grid_pane">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label fx:id="student_id_label" text="Mã số SV:" />
+                              <Label fx:id="student_name_label" text="Họ tên:" GridPane.columnIndex="1" />
+                              <Label fx:id="student_gender_label" text="Giới tính" GridPane.rowIndex="1" />
+                              <Label fx:id="student_major_label" text="Ngành:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="student_birthdate_label" text="Ngày sinh" GridPane.rowIndex="2" />
+                              <Label fx:id="student_class_label" text="Lớp học:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="student_address_label" text="Nơi sinh" GridPane.rowIndex="3" />
+                              <Label fx:id="student_year_label" prefWidth="123.0" text="Khóa học:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="586.0" layoutY="350.0" prefHeight="350.0" prefWidth="350.0" styleClass="class_view" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="350.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="class_view_Text" text="Lớp học phần">
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin></Text>
+                  <ComboBox fx:id="chonKi_comboBox" prefWidth="150.0" styleClass="semester">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="class_view_small_Text" text="Môn học/Học phần">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="class_view_small_Text" text="Số tín chỉ">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <ListView fx:id="court_list" prefHeight="237.0" prefWidth="339.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin></ListView>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="350.0" prefHeight="350.0" prefWidth="450.0" styleClass="leaderboard_view" AnchorPane.topAnchor="350.0">
+         <children>
+            <HBox prefHeight="50.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="leaderboard_view_Text" text="Kết quả học tập">
+                     <HBox.margin>
+                        <Insets left="15.0" top="5.0" />
+                     </HBox.margin></Text>
+                  <ComboBox fx:id="chonKiHoc_comboBox" prefWidth="150.0" styleClass="semester">
+                     <HBox.margin>
+                        <Insets left="145.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <BarChart fx:id="score_chart" prefWidth="676.0">
+              <xAxis>
+                  <CategoryAxis fx:id="xAxis" side="BOTTOM" />
+              </xAxis>
+                <yAxis>
+                    <NumberAxis lowerBound="0.0" side="LEFT" upperBound="10.0" tickUnit="1.0" />
+                </yAxis>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </BarChart>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

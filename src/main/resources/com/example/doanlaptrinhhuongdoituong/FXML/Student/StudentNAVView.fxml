@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="235.0" stylesheets="@../../CSS/NAVView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.student.StudentNAVController">
+   <children>
+      <AnchorPane prefHeight="750.0" prefWidth="200.0" styleClass="left_container">
+         <children>
+            <VBox prefHeight="60.0" prefWidth="235.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HỆ THỐNG QUẢN LÝ ĐIỂM">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox layoutY="100.0" prefHeight="625.0" prefWidth="235.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Button fx:id="HomeBtn" mnemonicParsing="false" text="Trang chủ" />
+                  <Button fx:id="DiemBtn" mnemonicParsing="false" text="Kết quả học tập" />
+                  <Button fx:id="MonBtn" mnemonicParsing="false" text="Xem lớp học phần" />
+                  <Button fx:id="DKHPBtn" mnemonicParsing="false" text="Đăng kí lớp học phần" />
+                  <Button fx:id="DKLNVBtn" mnemonicParsing="false" prefWidth="204.0" text="Đăng kí lớp NV" />
+                  <Button fx:id="HoclaiBtn" mnemonicParsing="false" text="Đăng kí học lại" />
+                  <Button fx:id="TTCNBtn" mnemonicParsing="false" prefWidth="147.0" text="Thông tin cá nhân" />
+                  <Line endX="100.0" startX="-100.0" />
+                  <Button fx:id="LogoutBtn" mnemonicParsing="false" styleClass="nav_menu_button" text="Đăng xuất" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

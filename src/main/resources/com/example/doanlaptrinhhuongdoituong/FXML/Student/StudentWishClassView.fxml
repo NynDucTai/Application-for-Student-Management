@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="root" stylesheets="@../../CSS/Student/StudentWishClassView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.student.StudentWishClassController">
+   <children>
+      <VBox layoutX="-27.0" prefHeight="750.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Đăng kí lớp nguyện vọng">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <VBox prefHeight="670.0" prefWidth="819.0" styleClass="main_view_container">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <TreeTableView fx:id="lopNV_table" prefHeight="565.0" prefWidth="789.0" styleClass="table_view">
+                    <columns>
+                      <TreeTableColumn fx:id="tenLopNV_col" prefWidth="75.0" text="Lớp NV" />
+                      <TreeTableColumn fx:id="tenMon_col" prefWidth="518.0000457763672" text="Tên môn học" />
+                        <TreeTableColumn fx:id="soTInChi_col" prefWidth="64.0" text="Số tín chỉ" />
+                        <TreeTableColumn fx:id="hocKi_col" prefWidth="66.6666259765625" text="Học kì" />
+                        <TreeTableColumn fx:id="namHoc_col" prefWidth="61.99991861979163" text="Năm học" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </TreeTableView>
+                  <HBox prefHeight="49.0" prefWidth="819.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lớp nguyện vọng được chọn:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="lopDuocChon_field" prefHeight="43.0" prefWidth="169.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="dangKi_button" mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" text="Đăng kí">
+                           <HBox.margin>
+                              <Insets left="355.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

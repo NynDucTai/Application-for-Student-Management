@@ -1,0 +1,94 @@
+.root {
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-background-color: #FFFFFF;
+}
+
+.welcome_title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+}
+
+.account_view {
+    -fx-background-color: #ECF4E8;
+    -fx-background-radius: 10 10 10 10;
+    -fx-padding: 10 0 10 0;
+    -fx-alignment: center;
+    -fx-border-width: 2 2 2 2;
+}
+
+.account_view Text {
+    -fx-fill: #051209;
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-font-size: 17px;
+    -fx-font-weight: 800;
+}
+
+.account_view Label {
+    -fx-fill: #051209;
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-font-size: 14px;
+}
+
+.account_view ImageView {
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 10, 0, 0, 10);
+}
+
+.grid_pane {
+    -fx-padding: 10px;
+    -fx-hgap: 15px;
+    -fx-vgap: 15px;
+}
+
+.leaderboard_view {
+    -fx-background-color: #ECF4E8;
+    -fx-background-radius: 10 10 10 10;
+    -fx-padding: 10 0 10 0;
+    -fx-alignment: center;
+    -fx-border-width: 2 2 2 2;
+}
+
+.leaderboard_view_Text {
+    -fx-fill: #051209;
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-font-size: 17px;
+    -fx-alignment: center;
+    -fx-font-weight: 800;
+}
+
+
+.semester {
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-color: #d0d5dd;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 3px 12px;
+}
+
+.semester:focused {
+    -fx-border-color: #ABE7B2;
+    -fx-border-width: 1.5px;
+}
+
+.class_view {
+    -fx-background-color: #ECF4E8;
+    -fx-padding: 0 15 35 15;
+    -fx-alignment: center;
+    -fx-background-radius: 8px;
+}
+
+.class_view_Text {
+    -fx-fill: #051209;
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-font-size: 17px;
+    -fx-alignment: center;
+    -fx-font-weight: 800;
+}
+
+.class_view_small_Text {
+    -fx-fill: #051209;
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}

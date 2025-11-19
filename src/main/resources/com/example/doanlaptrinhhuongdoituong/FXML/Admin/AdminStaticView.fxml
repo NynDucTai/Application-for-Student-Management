@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ComboBox?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="root" stylesheets="@../../CSS/Admin/AdminStaticView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.admin.AdminStaticController">
+   <children>
+      <VBox prefHeight="750.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Thống kê và báo cáo">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <VBox prefHeight="300.0" prefWidth="819.0" styleClass="lopnv_stat_container">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="819.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn kì học:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="chonKiHoc_NV_combobox" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn khoa:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="chonKhoa_NV_combobox" layoutX="76.0" layoutY="10.0" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <TreeTableView fx:id="lopNV_table" prefHeight="220.0" prefWidth="789.0" styleClass="table_view">
+                    <columns>
+                      <TreeTableColumn fx:id="maLopNV_col" prefWidth="75.0" text="Mã lớp NV" />
+                        <TreeTableColumn fx:id="lopNV_col" prefWidth="104.00006103515625" text="Lớp NV" />
+                      <TreeTableColumn fx:id="monHoc_col" prefWidth="379.3332977294922" text="Tên môn học" />
+                        <TreeTableColumn fx:id="soSVDK_col" prefWidth="142.00006103515625" text="Số sinh viên đăng kí" />
+                        <TreeTableColumn fx:id="trangThai_col" prefWidth="87.33331298828125" text="Trạng thái" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </TreeTableView>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox layoutX="25.0" layoutY="67.0" prefHeight="300.0" prefWidth="819.0" styleClass="lopnv_stat_container">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="819.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn kì học:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="chonKiHoc_HL_combobox" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn khoa:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="chonKhoa_HL_combobox" layoutX="76.0" layoutY="10.0" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <TreeTableView fx:id="lopHL_table" prefHeight="220.0" prefWidth="789.0" styleClass="table_view">
+                     <columns>
+                        <TreeTableColumn fx:id="maLopHL_col" prefWidth="75.0" text="Mã lớp HL" />
+                        <TreeTableColumn fx:id="lopHL_col" prefWidth="104.00006103515625" text="Lớp HL" />
+                        <TreeTableColumn fx:id="monHoc_hl_col" prefWidth="379.3332977294922" text="Tên môn học" />
+                        <TreeTableColumn fx:id="soSinhVien_col" prefWidth="142.00006103515625" text="Số sinh viên đăng kí" />
+                        <TreeTableColumn fx:id="trangThai_hl_col" prefWidth="87.33331298828125" text="Trạng thái" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </TreeTableView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

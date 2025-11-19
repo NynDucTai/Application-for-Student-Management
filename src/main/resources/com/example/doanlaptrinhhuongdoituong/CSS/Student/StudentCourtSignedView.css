@@ -1,0 +1,66 @@
+.root {
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-background-color: #FFFFFF;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+}
+
+.court_info_container {
+    -fx-font-size: 14px;
+    -fx-background-color: #ECF4E8;
+    -fx-background-radius: 10;
+}
+
+.court_table_view {
+    -fx-background-color: #ECF4E8;
+    -fx-border-width: 1 1 1 1;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color: #93BFC7;
+    -fx-border-radius: 2;
+}
+
+.court_table_view .column-header {
+    -fx-background-color: #ABE7B2;
+    -fx-background-radius: 2 2 2 2;
+    -fx-font-weight: 100;
+    -fx-font-size: 14px;
+}
+
+.court_table_view Text {
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-font-weight: 100;
+}
+
+.semester {
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-color: #d0d5dd;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 3px 12px;
+}
+
+.semester:focused {
+    -fx-border-color: #ABE7B2;
+    -fx-border-width: 1.5px;
+}
+
+.button {
+    -fx-background-color: #CBF3BB;
+    -fx-text-fill: #051209;
+    -fx-font-size: 14px;
+    -fx-alignment: center_left;
+    -fx-font-weight: 100;
+    -fx-pref-height: 40;
+    -fx-background-radius: 10;
+}
+.button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #93BFC7;
+}
+

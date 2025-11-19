@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="root" stylesheets="@../../CSS/Teacher/TeacherHomeView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.teacher.TeacherHomeController">
+   <children>
+      <Label fx:id="tenGV_label" layoutY="5.0" styleClass="title" text="Xin chào" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="10.0" />
+      <VBox prefHeight="550.0" prefWidth="819.0" styleClass="main_view_container" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="55.0">
+         <children>
+            <HBox prefHeight="35.0" prefWidth="819.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Các môn được phân công giảng dạy trong kì:">
+                     <HBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ComboBox fx:id="chonKi_comboBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Năm học:">
+                     <HBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ComboBox fx:id="chonNam_comboBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <TreeTableView fx:id="phanCong_table" prefHeight="565.0" prefWidth="789.0" styleClass="class_assigned_table">
+              <columns>
+                <TreeTableColumn fx:id="maHP_col" prefWidth="87.99996507167816" text="Mã học phần" />
+                <TreeTableColumn fx:id="tenMon_col" prefWidth="398.6666717529297" text="Tên môn học" />
+                  <TreeTableColumn fx:id="lopHP_col" prefWidth="91.33331298828125" text="Lớp học phần" />
+                  <TreeTableColumn fx:id="soTinChi_col" prefWidth="66.666748046875" text="Số tín chỉ" />
+                  <TreeTableColumn fx:id="siSo_col" prefWidth="36.0" text="Sĩ số" />
+                  <TreeTableColumn fx:id="kiHoc_col" prefWidth="42.6666259765625" text="Kì học" />
+                  <TreeTableColumn fx:id="namHoc_col" prefWidth="65.3333740234375" text="Năm học" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </TreeTableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

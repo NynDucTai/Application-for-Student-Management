@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<!-- Giao diện đơn giản sau khi đăng nhập thành công -->
+<StackPane fx:controller="com.example.doanlaptrinhhuongdoituong.controller.HomeController" xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER"
+           style="-fx-background-color: #f0f9f5;">
+    <Label text="Đăng Nhập Thành Công! Chào mừng bạn.">
+        <font>
+            <Font name="Arial Bold" size="24" />
+        </font>
+    </Label>
+</StackPane>

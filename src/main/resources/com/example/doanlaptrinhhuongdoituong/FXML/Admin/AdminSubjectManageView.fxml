@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="root" stylesheets="@../../CSS/Admin/AdminSubjectManageView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.admin.AdminSubjectManageController">
+   <children>
+      <VBox layoutX="391.0" layoutY="124.0" prefHeight="750.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Quản lý môn học">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <VBox prefHeight="101.0" prefWidth="819.0" styleClass="subject_management_container">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="41.0" prefWidth="819.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mã môn học:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="maMonHoc_field" prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tên môn học:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="tenMonHoc_field" layoutX="80.0" layoutY="10.0" prefWidth="120.0">
+                           <HBox.margin>
+                              <Insets left="16.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Khoa:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="khoa_comboBox" prefHeight="32.0" prefWidth="120.0">
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="61.0" prefWidth="819.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số tín chỉ:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="soTinChi_field" prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets left="35.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Học kì:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="hocKi_field" layoutX="62.0" layoutY="10.0" prefWidth="120.0">
+                           <HBox.margin>
+                              <Insets left="60.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Năm học:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="namHoc_field" prefWidth="120.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loại môn:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="loaiMon_field" layoutX="247.0" layoutY="10.0" prefWidth="100.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="527.0" prefWidth="819.0" styleClass="subject_management_table_container">
+               <VBox.margin>
+                  <Insets bottom="50.0" left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="62.0" prefWidth="819.0">
+                     <children>
+                        <Button fx:id="themMon_button" mnemonicParsing="false" text="Thêm môn">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Xóa môn" fx:id="xoaMon_button">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <TextField fx:id="timKiemMonHoc_field" prefHeight="40.0" prefWidth="169.0" promptText="Nhập tên môn học">
+                           <HBox.margin>
+                              <Insets left="355.0" top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="timKiem_button" mnemonicParsing="false" text="Tìm kiếm">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <TreeTableView fx:id="stuManageTable" prefHeight="440.0" prefWidth="789.0" styleClass="subject_table">
+                    <columns>
+                      <TreeTableColumn fx:id="maMon_col" prefWidth="75.0" text="Mã môn" />
+                      <TreeTableColumn fx:id="tenMon_col" prefWidth="350.66661071777344" text="Tên môn" />
+                        <TreeTableColumn fx:id="khoa_col" prefWidth="103.33343505859375" text="Khoa" />
+                        <TreeTableColumn fx:id="soTInChi_col" prefWidth="62.00006103515625" text="Số tín chỉ" />
+                        <TreeTableColumn fx:id="hocKi_col" prefWidth="43.3333740234375" text="Học kì" />
+                        <TreeTableColumn fx:id="namHoc_col" prefWidth="62.6666259765625" text="Năm học" />
+                        <TreeTableColumn fx:id="loaiMon_col" prefWidth="94.0" text="Loại môn" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </TreeTableView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

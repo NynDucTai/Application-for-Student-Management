@@ -1,0 +1,60 @@
+.root {
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-background-color: #FFFFFF;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: 800;
+}
+
+.main_view_container {
+    -fx-background-color: #ECF4E8;
+    -fx-background-radius: 10 10 10 10;
+    -fx-padding: 10 0 10 0;
+    -fx-border-width: 2 2 2 2;
+}
+
+.main_view_container Text {
+    -fx-fill: #051209;
+    -fx-font-family: 'Inter', 'Arial', sans-serif;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+    -fx-font-weight: 100;
+}
+
+.main_view_container ComboBox {
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-color: #d0d5dd;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 3px 12px;
+}
+
+.main_view_container ComboBox:focused {
+    -fx-border-color: #ABE7B2;
+    -fx-border-width: 1.5px;
+}
+
+.class_assigned_table {
+    -fx-background-color: #ECF4E8;
+    -fx-border-width: 1 1 1 1;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color: #93BFC7;
+    -fx-border-radius: 2;
+}
+
+.class_assigned_table .column-header {
+    -fx-background-color: #ABE7B2;
+    -fx-background-radius: 2 2 2 2;
+    -fx-font-size: 14px;
+    -fx-font-weight: 100;
+}
+
+.class_assigned_table Text {
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-font-weight: 100;
+}

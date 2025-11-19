@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="950.0" styleClass="root" stylesheets="@../../CSS/Admin/AdminStudentScoreView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.admin.AdminStudentScoreController">
+   <children>
+      <VBox layoutX="75.0" layoutY="21.0" prefHeight="850.0" prefWidth="950.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="hoTen_label" styleClass="title" text="Sinh viên">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="75.0" prefWidth="919.0" styleClass="semester_container">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn kì học:">
+                     <HBox.margin>
+                        <Insets left="15.0" top="15.0" />
+                     </HBox.margin></Text>
+                  <ComboBox fx:id="chonKiHoc_comboBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </HBox.margin></ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn năm học:">
+                     <HBox.margin>
+                        <Insets left="15.0" top="15.0" />
+                     </HBox.margin></Text>
+                  <ComboBox fx:id="hconNamHoc_comboBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="719.0" prefWidth="919.0" styleClass="table_container">
+               <children>
+                  <TreeTableView fx:id="score_table" prefHeight="294.0" prefWidth="889.0" styleClass="score_table_view">
+                     <columns>
+                        <TreeTableColumn fx:id="hp_id_col" prefWidth="48.000001311302185" text="Mã HP" />
+                        <TreeTableColumn fx:id="hp_name_col" prefWidth="219.99995803833008" text="Tên môn học/Học phần" />
+                        <TreeTableColumn fx:id="lophp_col" prefWidth="92.66668701171875" text="Lớp học phần" />
+                        <TreeTableColumn fx:id="tinchi_col" prefWidth="65.99993896484375" text="Số tín chỉ" />
+                        <TreeTableColumn fx:id="diemqt_col" prefWidth="62.66668701171875" text="Điểm QT" />
+                        <TreeTableColumn fx:id="diemkt_col" minWidth="0.0" prefWidth="60.000030517578125" text="Điểm KT" />
+                        <TreeTableColumn fx:id="diemtk_col" prefWidth="57.99993896484375" text="Điểm TK" />
+                        <TreeTableColumn fx:id="diem4_col" prefWidth="91.333251953125" text="Thang điểm 4" />
+                        <TreeTableColumn fx:id="diemchu_col" prefWidth="66.6666259765625" text="Điểm chữ" />
+                        <TreeTableColumn fx:id="dat_col" prefWidth="119.3333740234375" text="Đạt" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </TreeTableView>
+                  <HBox prefHeight="395.0" prefWidth="919.0">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <BarChart fx:id="bar_chart" prefHeight="395.0" prefWidth="689.0">
+                          <xAxis>
+                            <CategoryAxis prefHeight="55.0" prefWidth="565.0" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" upperBound="10.0" />
+                          </yAxis>
+                        </BarChart>
+                        <VBox prefHeight="395.0" prefWidth="210.0">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

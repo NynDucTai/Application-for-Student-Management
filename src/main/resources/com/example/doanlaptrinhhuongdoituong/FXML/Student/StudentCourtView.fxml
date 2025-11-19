@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" stylesheets="@../../CSS/Student/SudentCourtView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.student.StudentCourtController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="750.0" prefWidth="850.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Lớp học phần đã đăng kí">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <VBox prefHeight="59.0" prefWidth="819.0" styleClass="semester_choice_container">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="52.0" prefWidth="819.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn kì học:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="chonKiHoc_comboBox" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn năm học:">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="chonNamHoc_comboBox" layoutX="76.0" layoutY="10.0" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="560.0" prefWidth="819.0" styleClass="table_container">
+               <children>
+                  <TreeTableView fx:id="court_table" prefHeight="525.0" prefWidth="789.0" styleClass="score_table_view">
+                    <columns>
+                      <TreeTableColumn fx:id="hp_id_col" prefWidth="95.33340203762054" text="Mã môn học" />
+                        <TreeTableColumn fx:id="lophp_col" minWidth="4.6666259765625" prefWidth="94.6666259765625" text="Lớp học phần" />
+                        <TreeTableColumn fx:id="hp_name_col" minWidth="0.0" prefWidth="397.3334655761719" text="Tên môn học" />
+                        <TreeTableColumn fx:id="tinchi_col" prefWidth="61.9998779296875" text="Số tín chỉ" />
+                        <TreeTableColumn fx:id="hocKi_col" minWidth="0.0" prefWidth="68.666748046875" text="Học kì" />
+                        <TreeTableColumn fx:id="namHoc_col" prefWidth="67.333251953125" text="Năm học" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="20.0" />
+                     </VBox.margin>
+                  </TreeTableView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="50.0" left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

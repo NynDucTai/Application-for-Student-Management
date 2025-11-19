@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" stylesheets="@../../CSS/Student/StudentCourtSignedView.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.doanlaptrinhhuongdoituong.controller.student.StudentCourtSignedController">
+   <children>
+      <VBox prefHeight="724.0" prefWidth="850.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Đăng kí học phần">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <VBox prefHeight="679.0" prefWidth="819.0" styleClass="court_info_container">
+               <children>
+                  <HBox prefHeight="21.0" prefWidth="851.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Các lớp học phần có thể đăng kí" wrappingWidth="203.41796875">
+                           <HBox.margin>
+                              <Insets left="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                        <ComboBox fx:id="chonKiHoc1_comboBox" prefWidth="150.0" styleClass="semester">
+                           <HBox.margin>
+                              <Insets left="270.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="chonNamHoc1_comboBox" prefWidth="150.0" styleClass="semester">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <TreeTableView fx:id="sign_court_table" prefHeight="550.0" prefWidth="789.0" styleClass="court_table_view">
+                    <columns>
+                      <TreeTableColumn fx:id="maHP_col" prefWidth="93.33340203762054" text="Mã học phần" />
+                      <TreeTableColumn fx:id="tenMon_col" prefWidth="442.0000457763672" text="Tên môn học/Học phần" />
+                        <TreeTableColumn fx:id="lopHP_col" prefWidth="93.33331298828125" text="Lớp học phần" />
+                        <TreeTableColumn fx:id="soTinChi_col" prefWidth="83.3333740234375" text="Số tín chỉ" />
+                        <TreeTableColumn fx:id="namHoc_col" prefWidth="75.0" text="Năm học" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </VBox.margin>
+                  </TreeTableView>
+                  <Button fx:id="dangKi_button" mnemonicParsing="false" text="Đăng kí">
+                     <VBox.margin>
+                        <Insets left="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="15.0" right="15.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
