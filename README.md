@@ -28,25 +28,6 @@ Một ứng dụng Desktop được xây dựng bằng **Java** trên IntelliJ v
     Cần cài MySQL Server
     Cần cài Maven Plugin
 
-- [Cấu trúc dự án]
-  src/
-├── main/
-│   ├── java/
-│   │   └── com/example/project/
-│   │       ├── App.java          # Class chính (Main entry)
-│   │       ├── controller/       # Xử lý sự kiện (Event handling)
-│   │       ├── model/            # Class đối tượng (POJO)
-│   │       ├── dao/              # Truy xuất dữ liệu (Database)
-│   │       ├── util/            
-│   │       └── view/              
-│   ├── resources/
-│   │   ├── com/example/project/
-│   │   │   ├── FXML/             # Các file giao diện .fxml
-│   │   │   ├── CSS/              # Stylesheet
-│   │   │   └── Resource/           # Hình ảnh icon
-│   └── module-info.java          # Cấu hình Module (Quan trọng với JavaFX mới)
-└── pom.xml                       # Khai báo dependencies
-
 - [Công nghệ sử dụng]
     Core: Java 17
     GUI: JavaFX (FXML & CSS)
