@@ -24,23 +24,24 @@ Một ứng dụng Desktop được xây dựng bằng **Java** trên IntelliJ v
     ...
   
 - [Yêu cầu hệ thống]
-    Cần cài Java
-    Cần cài MySQL Server
-    Cần cài Maven Plugin
+    Cần cài Java.
+    Cần cài MySQL Server.
+    Cần cài Maven Plugin.
+    Cần cài MySQL connector.
 
 - [Công nghệ sử dụng]
-    Core: Java 17
-    GUI: JavaFX (FXML & CSS)
-    Build Tool: Maven
-    Database: MySQL
+    Core: Java 17.
+    GUI: JavaFX (FXML & CSS).
+    Build Tool: Maven.
+    Database: MySQL.
 
 ## 📖 Giới thiệu
-[Phần mềm này giúp giáo viên quản lý điểm số sinh viên, xuất báo cáo và theo dõi chuyên cần..., giáo vụ quản lý được khoa, môn học, giảng viên, sinh viên, .... Sinh viên có thể xem được điểm só của bản thân, xem được các họ phần đẫ đăng kí, ....]
+[Phần mềm này giúp giáo viên quản lý điểm số sinh viên, xuất báo cáo và theo dõi chuyên cần..., giáo vụ quản lý được khoa, môn học, giảng viên, sinh viên, .... Sinh viên có thể xem được điểm só của bản thân, xem được các họ phần đã đăng kí, ....]
 
 ## 🚀 Chức năng chính
-- [x] Đăng nhập
-- [x] Quản lý dữ liệu (CRUD) với giao diện trực quan
-- [x] Tìm kiếm và lọc thông tin
+- [x] Đăng nhập.
+- [x] Quản lý dữ liệu (CRUD) với giao diện trực quan.
+- [x] Tìm kiếm và lọc thông tin.
 
 ## ⚙️ Yêu cầu hệ thống
 Để chạy được mã nguồn này, máy tính cần cài đặt:
